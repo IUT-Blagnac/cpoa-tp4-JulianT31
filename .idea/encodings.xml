@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/applicationBanqueActionGenerique/ApplicationAgenceBancaire.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/applicationBanqueActionGenerique/Main.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/applicationBanqueActionGenerique/application" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/applicationBanqueActionGenerique/banque" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/applicationBanqueActionGenerique/banque/AgenceBancaire.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/applicationBanqueActionGenerique/banque/Compte.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/applicationBanqueActionGenerique/banque/exception" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/applicationBanqueActionGenerique/banque/exception/ABCompteDejaExistantException.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/applicationBanqueActionGenerique/banque/exception/ABCompteInexistantException.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/applicationBanqueActionGenerique/banque/exception/ABCompteNullException.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/applicationBanqueActionGenerique/banque/exception/CompteException.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/applicationBanqueActionGenerique/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/applicationBanqueActionGenerique/java/banque/AgenceBancaire.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/applicationBanqueActionGenerique/java/banque/Compte.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/applicationBanqueActionGenerique/java/banque/exception" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/applicationBanqueActionGenerique/java/banque/exception/ABCompteDejaExistantException.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/applicationBanqueActionGenerique/java/banque/exception/ABCompteInexistantException.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/applicationBanqueActionGenerique/java/banque/exception/ABCompteNullException.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/applicationBanqueActionGenerique/java/banque/exception/CompteException.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/ApplicationAgenceBancaire.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/banque/AgenceBancaire.java" charset="windows-1252" />

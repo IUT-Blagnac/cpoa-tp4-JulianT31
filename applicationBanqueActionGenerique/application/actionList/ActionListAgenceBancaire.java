@@ -10,7 +10,7 @@ import java.util.Scanner;
 /**
  * @Author : Julian TRANI 2B
  */
-public class ActionListAgenceBancaire implements ActionList<AgenceBancaire> {
+public class ActionListAgenceBancaire implements ActionList {
     private String message ;
     private String code ;
     private String title ;

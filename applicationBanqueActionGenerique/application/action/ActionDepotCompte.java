@@ -8,7 +8,7 @@ import java.util.Scanner;
 /**
  * @author : Julian TRANI
  */
-public class ActionDepotCompte implements Action<AgenceBancaire>{
+public class ActionDepotCompte implements Action{
     private String message ;
     private String code ;
 

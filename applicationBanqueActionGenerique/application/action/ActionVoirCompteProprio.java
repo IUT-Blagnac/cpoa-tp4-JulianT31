@@ -6,9 +6,9 @@ import banque.Compte;
 import java.util.Scanner;
 
 /**
- * @author : Julian TRANI
+ * @author : Julian TRANI 2B
  */
-public class ActionDepotCompte implements Action<AgenceBancaire>{
+public class ActionVoirCompteProprio implements Action{
     private String message ;
     private String code ;
 
@@ -16,9 +16,9 @@ public class ActionDepotCompte implements Action<AgenceBancaire>{
      * Constructeur
      * @param code
      */
-    public ActionDepotCompte(String code) {
-        this.message = "Déposer de l'argent sur un compte";
-        this.code = code;
+    public ActionVoirCompteProprio(String code) {
+        this.message = "Voir les comptes d'un Propriétaire";
+        this.code = code ;
     }
 
     @Override
@@ -35,20 +35,18 @@ public class ActionDepotCompte implements Action<AgenceBancaire>{
     public void execute(AgenceBancaire ag) throws Exception {
         // Saisie
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Veuillez saisir le numéro du compte --> ");
-        String numCompte = scanner.nextLine();
+        System.out.println("Veuillez saisir un nom de proprio --> ");
+        String proprioCompte = scanner.nextLine();
 
-        Compte c = ag.getCompte(numCompte) ;
-        if (c==null) {
+        Compte[] c = ag.getComptesDe(proprioCompte) ;
+        if (c==null || c.length == 0) {
             System.out.println("\nCompte inexistant ...\n");
-            return;
         } else {
-            c.afficher();
+            for (Compte cpt : c){
+                cpt.afficher();
+            }
         }
 
-        System.out.println("\nVeuillez saisir le montant du depot --> ");
-        int montant = (int) scanner.nextDouble();
-
-        ag.getCompte(numCompte).deposer(montant);
+        System.out.println("\n");
     }
 }

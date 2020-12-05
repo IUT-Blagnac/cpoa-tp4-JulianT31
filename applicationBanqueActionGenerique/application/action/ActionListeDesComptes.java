@@ -1,12 +1,11 @@
 package application.action;
 
 import banque.AgenceBancaire;
-import banque.Compte;
 
 /**
  * @author : Julian TRANI 2B
  */
-public class ActionListeDesComptes implements Action<AgenceBancaire>{
+public class ActionListeDesComptes implements Action{
     private String message ;
     private String code ;
 

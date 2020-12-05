@@ -6,9 +6,9 @@ import banque.Compte;
 import java.util.Scanner;
 
 /**
- * @author : Julian TRANI
+ * @author : Julian TRANI 2B
  */
-public class ActionDepotCompte implements Action<AgenceBancaire>{
+public class ActionRetraitCompte implements Action{
     private String message ;
     private String code ;
 
@@ -16,8 +16,8 @@ public class ActionDepotCompte implements Action<AgenceBancaire>{
      * Constructeur
      * @param code
      */
-    public ActionDepotCompte(String code) {
-        this.message = "Déposer de l'argent sur un compte";
+    public ActionRetraitCompte( String code) {
+        this.message = "Retirer de l'argent sur un compte";
         this.code = code;
     }
 
@@ -46,9 +46,10 @@ public class ActionDepotCompte implements Action<AgenceBancaire>{
             c.afficher();
         }
 
-        System.out.println("\nVeuillez saisir le montant du depot --> ");
+        System.out.println("\nVeuillez saisir le montant du retrait --> ");
         int montant = (int) scanner.nextDouble();
 
-        ag.getCompte(numCompte).deposer(montant);
+        ag.getCompte(numCompte).retirer(montant);
+
     }
 }
