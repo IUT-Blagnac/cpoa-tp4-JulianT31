@@ -467,7 +467,7 @@ public interface ActionList extends Action {
 }
 ----
 +
-.	Déclarer une classe `ActionListAgenceBancaire` dans le package `application.actionlist`,
+.	Déclarer une classe `ActionListInstance` dans le package `application.actionlist`,
 ..	qui implémente `ActionList`,
 ..	dotée de quatre attributs (message, code, title, liste des actions). La liste des actions sera les différentes options que l'action list (menu) devra afficher.
 ..	écrire le code dont un constructeur correctement paramétré,
@@ -482,8 +482,8 @@ image:applicationbanque.svg[]
 
 .	Créer une classe contenant un main et permettant :
 ..	de créer une instance de chaque classe `Action` créée,
-..	de créer une instance de `ActionListAgenceBancaire`,
-..	lancer `execute()` sur l'instance de `ActionListAgenceBancaire`.
+..	de créer une instance de `ActionListInstance`,
+..	lancer `execute()` sur l'instance de `ActionListInstance`.
 +
 [WARNING]
 ====
@@ -670,12 +670,12 @@ public interface ActionList<E> extends Action<E>{
 
 === Quid d'`ActionList` ?
 
-La classe `ActionListAgenceBancaire` qui met en oeuvre un menu (qui implémente `ActionList`) est ici créée spécifiquement pour `{ag}`. Mais cela est il nécessaire dans chaque application ? (en supposant ne rien afficher de l'`{ag}`). On devrait pouvoir faire une classe "générique" de gestion de menus composés d'actions et réutilisable dans chaque application.
+La classe `ActionListInstance` qui met en oeuvre un menu (qui implémente `ActionList`) est ici créée spécifiquement pour `{ag}`. Mais cela est il nécessaire dans chaque application ? (en supposant ne rien afficher de l'`{ag}`). On devrait pouvoir faire une classe "générique" de gestion de menus composés d'actions et réutilisable dans chaque application.
 
 Alors essayons :
 
 .	Faire une copie du projet de la section précédente
-.	Déplacer la classe `ActionListAgenceBancaire` dans le package `action`.
+.	Déplacer la classe `ActionListInstance` dans le package `action`.
 .	Renommer cette classe en un nom contenant "ActionList" et bien choisi. AbstractActionList serait TRES mal choisi.
 .	Pour rendre cette classe générique (et non pas abstraite), modifier l'en-tête en
 +

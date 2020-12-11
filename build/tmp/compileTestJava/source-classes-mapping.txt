@@ -1,0 +1,4 @@
+application/actionList/GenericActionListTest.java
+ application.actionList.GenericActionListTest
+banque/CompteTest.java
+ banque.CompteTest

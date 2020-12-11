@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="banque.CompteTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2020-12-11T20:27:50" hostname="PCJULIAN" time="0.002">
+  <properties/>
+  <testcase name="nomCompte" classname="banque.CompteTest" time="0.001"/>
+  <testcase name="retirerNegativeValue" classname="banque.CompteTest" time="0.001"/>
+  <testcase name="deposerNegativeValue" classname="banque.CompteTest" time="0.0"/>
+  <testcase name="proprioCompte" classname="banque.CompteTest" time="0.0"/>
+  <testcase name="soldeCompte" classname="banque.CompteTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
